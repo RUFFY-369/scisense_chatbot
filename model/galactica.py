@@ -4,7 +4,8 @@
 from transformers import OPTForCausalLM, AutoTokenizer
 import tempfile
 
-def init_model(model_name: str ="facebook/galactica-1.3b"):
+
+def init_model(model_name: str = "facebook/galactica-1.3b"):
     """
     Initializes the tokenizer and model, using a temporary directory for offloading.
 
@@ -21,12 +22,20 @@ def init_model(model_name: str ="facebook/galactica-1.3b"):
 
     # Initialize tokenizer and model
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = OPTForCausalLM.from_pretrained(model_name, device_map="auto", offload_folder=temp_dir.name)
+    model = OPTForCausalLM.from_pretrained(
+        model_name, device_map="auto", offload_folder=temp_dir.name
+    )
 
     return model, tokenizer, temp_dir
 
 
-def generate_response(model: OPTForCausalLM, tokenizer: AutoTokenizer, prompt: str, max_length: int = 100, top_p: float = 0.95):
+def generate_response(
+    model: OPTForCausalLM,
+    tokenizer: AutoTokenizer,
+    prompt: str,
+    max_length: int = 100,
+    top_p: float = 0.95,
+):
     """
     Generates a response based on the input prompt.
 
@@ -44,7 +53,9 @@ def generate_response(model: OPTForCausalLM, tokenizer: AutoTokenizer, prompt: s
     inputs = tokenizer(prompt, return_tensors="pt").input_ids.to(model.device)
 
     # Generate a response using the model
-    response = model.generate(inputs, max_length=max_length, do_sample=True, top_p=top_p)[0]
+    response = model.generate(
+        inputs, max_length=max_length, do_sample=True, top_p=top_p
+    )[0]
 
     # Decode and return the generated response
     output = tokenizer.decode(response, skip_special_tokens=True)
