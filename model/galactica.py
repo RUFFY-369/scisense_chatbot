@@ -33,8 +33,8 @@ def generate_response(
     model: OPTForCausalLM,
     tokenizer: AutoTokenizer,
     prompt: str,
-    max_length: int = 100,
-    top_p: float = 0.95,
+    max_length: int = 400,
+    top_p: float = 0.9,
 ):
     """
     Generates a response based on the input prompt.
