@@ -1,4 +1,4 @@
-# AI Junior Developer Test 
+# SciSenseBot - A Galactica based Chatbot to answer Science related Questions
 Welcome! You’ve stepped into the arena – now show us what you’ve got! 
 
 ## Mission
