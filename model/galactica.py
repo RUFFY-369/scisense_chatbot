@@ -33,8 +33,8 @@ def generate_response(
     model: OPTForCausalLM,
     tokenizer: AutoTokenizer,
     prompt: str,
-    max_length: int = 400,
-    top_p: float = 0.9,
+    max_length: int = 250,
+    top_p: float = 0.7,
 ):
     """
     Generates a response based on the input prompt.
@@ -49,6 +49,7 @@ def generate_response(
     Returns:
         output (str): The generated text response.
     """
+    prompt = f"Question: {prompt}\n\nAnswer:"
     # Tokenize the input prompt and move to the model's device
     inputs = tokenizer(prompt, return_tensors="pt").input_ids.to(model.device)
 

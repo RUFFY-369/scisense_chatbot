@@ -17,7 +17,6 @@ declare -a prompts=(
 # Iterate through each prompt and send it as a request
 for prompt in "${prompts[@]}"
 do
-    prompt="Question: $prompt\n\nAnswer:"
     # Send each prompt to the local API using curl
     curl --location 'http://localhost:5500/execution' \
          --header 'Content-Type: application/json' \
