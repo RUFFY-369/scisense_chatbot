@@ -1,0 +1,7 @@
+openfabric-pysdk
+torch
+torchvision
+torchaudio
+transformers
+accelerate
+bitsandbytes>=0.39.0
