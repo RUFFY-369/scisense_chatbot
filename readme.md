@@ -38,7 +38,7 @@ Welcome to SciSenseBot – an intelligent chatbot designed to tackle your toughe
 ## 🌟 Solution Overview
 This project is the solution to the challenge of creating an AI chatbot capable of answering complex science-related queries. Our bot harnesses Galactica, a powerful model optimized for scientific content, ensuring high-quality, contextually accurate responses.
 
-In this implementation, we focus on efficiency, creativity, and robustness by using OPTForCausalLM from the Galactica family to provide accurate and meaningful responses to a wide variety of scientific questions.
+In this implementation, we focus on efficiency, creativity, and robustness by using OPTForCausalLM from the Hugging face 🤗 transformers library to provide accurate and meaningful responses to a wide variety of scientific questions.
 
 ## 🚀 Features
 Scientific Q&A: Answers a wide range of science-related questions in physics, chemistry, biology, and other disciplines.
@@ -128,7 +128,7 @@ declare -a questions=(
 )
 ```
 
-You can also run these questions in bulk using the provided script in the /scripts folder.
+You can also run these questions in bulk using the `example.sh` bash script.
 
 ## 📊 Model Information
 Model	Size	Purpose
