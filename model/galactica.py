@@ -23,7 +23,7 @@ def init_model(model_name: str = "facebook/galactica-1.3b"):
     # Initialize tokenizer and model
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = OPTForCausalLM.from_pretrained(
-        model_name, device_map="auto", offload_folder=temp_dir.name
+        model_name
     )
 
     return model, tokenizer, temp_dir
@@ -33,7 +33,7 @@ def generate_response(
     model: OPTForCausalLM,
     tokenizer: AutoTokenizer,
     prompt: str,
-    max_length: int = 250,
+    max_length: int = 50,
     top_p: float = 0.7,
 ):
     """

@@ -1,39 +1,25 @@
-<!-- # SciSenseBot - A Galactica based Chatbot to answer Science related Questions
-
-## Task
-Forge an 💬NLP chatbot that doesn’t just answer, but masters science-related questions.
-
-## Ground Rules
-Step up with any arsenal (read: libraries or packages) you believe in, but remember:
-* 👎 External services like chatGPT are off-limits. Stand on your own.
-* 👎 Plagiarism is for the weak. Forge your own path.
-* 👎 A broken app equals failure. Non-negotiable.
-
-## Deployment Options
-The application can be executed in two different ways:
-* locally by running the `start.sh` 
-* on in a docker container using `Dockerfile` 
-
-## Proving Your Mettle
-* Submit your masterpiece on GitHub. We want the link within **1 week, not a second more**.
-* Go the extra mile and include a video where you walk us through your solution, showcasing 
-it in live action. 
-* We want to see not just what you've created but also how you envisioned and executed it
-
-
-## This Is It
-We're not just evaluating a project; we're judging your potential to revolutionize our 
-landscape. A half-baked app won’t cut it.
-
-We're zeroing in on:
-* 👍 Exceptional documentation.
-* 👍 Code that speaks volumes.
-* 👍 Inventiveness that dazzles.
-* 👍 A problem-solving beast.
-* 👍 Unwavering adherence to the brief -->
-
 # SciSenseBot - A Science Q&A Chatbot Powered by Galactica
 Welcome to SciSenseBot – an intelligent chatbot designed to tackle your toughest science-related questions. Powered by the Galactica language model, SciSenseBot leverages cutting-edge natural language processing (NLP) to generate precise, insightful responses to questions spanning physics, chemistry, biology, and beyond!
+
+## 🤖 Model Selection: Why Galactica?
+For SciSenseBot, we chose Galactica due to its specialization in science-related content and high contextual accuracy. Here’s why it stood out:
+
+1. Tailored for Science
+Galactica is trained on scientific literature, making it ideal for answering complex questions in fields like physics, chemistry, and biology.
+
+2. Vast Knowledge Base
+With Galactica 1.3B, we leverage a model trained on a massive corpus of scientific texts, ensuring accurate, well-informed responses.
+
+3. Contextual Understanding
+Its ability to handle specific scientific terms and concepts makes Galactica particularly suited for precise and relevant answers.
+
+4. Versatility Across Domains
+Whether the query is about quantum mechanics or genetics, Galactica adapts well to various science disciplines, ensuring consistent performance.
+
+5. Efficiency and Generalization
+Despite its large size, Galactica is efficient and provides accurate answers even for niche topics, making it the perfect fit for a science Q&A chatbot.
+
+By using Galactica, SciSenseBot can deliver reliable, high-quality answers across a wide range of scientific topics, ensuring a robust user experience.
 
 ## 🌟 Solution Overview
 This project is the solution to the challenge of creating an AI chatbot capable of answering complex science-related queries. Our bot harnesses Galactica, a powerful model optimized for scientific content, ensuring high-quality, contextually accurate responses.
@@ -145,3 +131,8 @@ Introduce caching for repeated questions to enhance performance in large-scale u
 
 ## 💡 Conclusion
 The SciSenseBot is an intelligent chatbot tailored for science Q&A tasks. By utilizing the Galactica model, we ensure that it delivers high-quality, contextually accurate responses across a wide range of scientific domains. This is a powerful tool for students, educators, and science enthusiasts alike.
+
+## 🎥 Video Demo
+We have prepared a video demo that showcases SciSenseBot in action! Here's the demo :
+
+[![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)

@@ -2,7 +2,7 @@
 
 # A set of science prompts ranging from physics to biology, space, and more.
 declare -a prompts=(
-    "Can dark matter interact with ordinary matter, and how might we detect it?"
+   "Can dark matter interact with ordinary matter, and how might we detect it?"
     "What biological processes contribute to aging, and how can they be slowed?"
     "How do supermassive black holes form at the center of galaxies?"
     "What are the potential impacts of quantum computing on modern cryptography?"
@@ -17,7 +17,7 @@ declare -a prompts=(
 # Iterate through each prompt and send it as a request
 for prompt in "${prompts[@]}"
 do
-    # Send each prompt to the local API using curl
+    #  Send a POST request to the chatbot's execution endpoint using curl
     curl --location 'http://localhost:5500/execution' \
          --header 'Content-Type: application/json' \
          --data '{
