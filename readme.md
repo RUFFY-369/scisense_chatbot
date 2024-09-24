@@ -133,6 +133,8 @@ Introduce caching for repeated questions to enhance performance in large-scale u
 The SciSenseBot is an intelligent chatbot tailored for science Q&A tasks. By utilizing the Galactica model, we ensure that it delivers high-quality, contextually accurate responses across a wide range of scientific domains. This is a powerful tool for students, educators, and science enthusiasts alike.
 
 ## 🎥 Video Demo
-We have prepared a video demo that showcases SciSenseBot in action! Here's the demo :
+We have prepared a video demo that showcases SciSenseBot in action! Here's the demo (click on the image) :
 
-[![Video Title](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+<a href="https://www.youtube.com/watch?v=f4dMlhAjYgk" target="_blank">
+  <img src="media/thumbnail.jpg" alt="Video Title" width="500"/>
+</a>
