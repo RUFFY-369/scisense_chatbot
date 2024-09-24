@@ -101,6 +101,14 @@ curl --location 'localhost:5500/execution' \
      }'
 ```
 
+Colab Notebook:
+
+The main code is provided in the notebook for easy grasp of the app control.
+Simply click the badge to open the notebook in Google Colab and start experimenting with *SciSenseBot*! 🚀
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](notebooks/OpenfabricAI.ipynb)
+
+
 ## 🧪 Sample Questions
 
 ```
